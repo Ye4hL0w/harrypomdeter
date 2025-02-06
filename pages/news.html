@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Harry pomme de terre et Dom le magicien</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-magic"></i> Harry & Dom
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="news-hero">
+        <div class="news-hero-content" data-aos="fade-up">
+            <h1>Dernières Actualités</h1>
+            <p class="lead">Restez informés de nos aventures magiques</p>
+        </div>
+        <div class="news-hero-overlay"></div>
+    </header>
+
+    <!-- Section Articles Vedettes -->
+    <section class="featured-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <article class="featured-article">
+                        <div class="article-image">
+                            <img src="../images/news/featured1.jpg" alt="Article à la une">
+                            <div class="article-category">Événement Spécial</div>
+                        </div>
+                        <div class="article-content">
+                            <h2>Le Grand Festival de Magie</h2>
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar"></i> 15 Mars 2025</span>
+                                <span><i class="far fa-user"></i> Par Dom le magicien</span>
+                            </div>
+                            <p>Préparez-vous pour le plus grand festival de magie de l'année ! Harry pomme de terre et Dom le magicien vous réservent des surprises extraordinaires...</p>
+                            <a href="#" class="btn btn-primary">Lire la suite</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="trending-news">
+                        <h3>Tendances</h3>
+                        <div class="trending-item">
+                            <span class="number">01</span>
+                            <div class="trending-content">
+                                <h4>Nouvelle formule magique découverte</h4>
+                                <span class="date">10 Mars 2025</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <span class="number">02</span>
+                            <div class="trending-content">
+                                <h4>Les secrets des pommes de terre magiques</h4>
+                                <span class="date">8 Mars 2025</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <span class="number">03</span>
+                            <div class="trending-content">
+                                <h4>Interview exclusive avec Dom</h4>
+                                <span class="date">5 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Articles Récents -->
+    <section class="recent-news">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Articles Récents</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="../images/news/article1.jpg" alt="Article 1">
+                            <div class="news-category">Aventures</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>La Quête du Cristal Magique</h3>
+                            <div class="news-meta">
+                                <span><i class="far fa-calendar"></i> 1 Mars 2025</span>
+                                <span><i class="far fa-comment"></i> 12 commentaires</span>
+                            </div>
+                            <p>Suivez Harry et Dom dans leur nouvelle quête épique à la recherche du légendaire Cristal Magique...</p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Répétez pour plus d'articles -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination-container" data-aos="fade-up">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Restez informés !</h2>
+                <p>Inscrivez-vous à notre newsletter pour ne manquer aucune aventure</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre adresse email">
+                        <button class="btn btn-primary" type="submit">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Harry & Dom</h4>
+                    <p>L'univers magique qui enchante vos journées</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harry pomme de terre et Dom le magicien. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/news.js"></script>
+</body>
+</html> 
