@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry pomme de terre et Dom le magicien</title>
+  <title>Harry & Dom | Duo magique et humoristique</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -11,8 +15,8 @@
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/modern.css">
+  <link rel="stylesheet" href="css/home-modern.css">
 </head>
 <body>
 
@@ -49,69 +53,182 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Harry pomme de terre et Dom le magicien</h1>
-      <p class="lead">Embarquez pour une aventure magique extraordinaire</p>
-      <a href="pages/about.html" class="btn btn-primary btn-lg">Découvrir l'histoire</a>
-    </div>
     <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+      <h1>L'art de la magie<br>rencontre l'humour</h1>
+      <p class="lead">Découvrez l'univers unique de Harry pomme de terre et Dom le magicien</p>
+      <a href="pages/about.html" class="btn btn-primary">Découvrir notre histoire</a>
+    </div>
+    <a href="#about" class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </header>
 
-  <!-- Featured Section -->
-  <section class="featured">
+  <!-- À propos Section -->
+  <section id="about" class="about-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="feature-card">
-            <i class="fas fa-wand-sparkles"></i>
-            <h3>Magie Unique</h3>
-            <p>Découvrez des sorts extraordinaires</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-container">
+            <img src="images/duo-magicienclown.jpg" alt="Harry et Dom en action" class="about-img">
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="feature-card">
-            <i class="fas fa-hat-wizard"></i>
-            <h3>Aventures</h3>
-            <p>Vivez des quêtes épiques</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="feature-card">
-            <i class="fas fa-dragon"></i>
-            <h3>Créatures</h3>
-            <p>Rencontrez des êtres fantastiques</p>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-content">
+            <h2>Un duo pas comme les autres</h2>
+            <p>Dans l'univers fascinant où la magie rencontre l'humour, Harry pomme de terre et Dom le magicien forment un duo unique et captivant. Leur spectacle mêle illusions surprenantes, tours de magie époustouflants et moments comiques inoubliables.</p>
+            <p>Avec une expérience de plus de 10 ans sur scène, ils ont su développer une alchimie parfaite qui enchante aussi bien les enfants que les adultes. Leur approche innovante de la magie a révolutionné l'art du spectacle en y apportant une touche d'originalité et d'émotion.</p>
+            <a href="pages/about.html" class="btn btn-outline">En savoir plus</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Latest News Preview -->
-  <section class="news-preview">
+  <!-- Services Section -->
+  <section class="services-section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Dernières Actualités</h2>
+      <div class="section-header" data-aos="fade-up">
+        <h2>Nos Services</h2>
+        <p>Des prestations magiques adaptées à tous vos événements</p>
+      </div>
       <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="news-card">
-            <div class="news-image">
-              <img src="images/news-preview-1.jpg" alt="Actualité 1">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-wand-sparkles"></i>
             </div>
-            <div class="news-content">
-              <h3>Nouveau Chapitre</h3>
-              <p>Une nouvelle aventure commence...</p>
-              <a href="pages/news.html" class="btn btn-outline-primary">Lire plus</a>
+            <h3>Spectacles Privés</h3>
+            <p>Des représentations intimistes et personnalisées pour vos événements privés, anniversaires ou célébrations.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hat-wizard"></i>
+            </div>
+            <h3>Événements d'Entreprise</h3>
+            <p>Une touche de magie et d'humour pour vos soirées d'entreprise, séminaires ou lancements de produit.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Ateliers de Magie</h3>
+            <p>Apprenez les secrets de la magie grâce à nos ateliers interactifs pour tous les âges et tous les niveaux.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Notre Galerie</h2>
+        <p>Découvrez quelques moments captivants de nos spectacles</p>
+      </div>
+      <div class="row gallery-container">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-item">
+            <img src="images/harry-et-dom.jpg" alt="Harry et Dom en spectacle" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>Un duo magique</h3>
+              <p>Harry et Dom lors d'une représentation spéciale</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="news-card">
-            <div class="news-image">
-              <img src="images/news-preview-2.jpg" alt="Actualité 2">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-item">
+            <img src="images/duo-magicienclown.jpg" alt="Moment d'illusion" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>L'art de l'illusion</h3>
+              <p>Une performance qui laisse le public sans voix</p>
             </div>
-            <div class="news-content">
-              <h3>Événement Spécial</h3>
-              <p>Rejoignez-nous pour un moment magique...</p>
-              <a href="pages/news.html" class="btn btn-outline-primary">Lire plus</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-item">
+            <img src="images/harry-et-dom.jpg" alt="Spectacle pour enfants" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>La magie pour tous</h3>
+              <p>Un moment de joie partagé avec les enfants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4" data-aos="fade-up">
+        <a href="pages/gallery.html" class="btn btn-outline">Voir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Ce que disent nos clients</h2>
+        <p>Des témoignages qui parlent d'eux-mêmes</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial">
+          <img src="images/harry-et-dom.jpg" alt="Client satisfait" class="testimonial-img">
+          <p class="testimonial-text">
+            "Harry et Dom ont transformé notre événement d'entreprise en une expérience magique inoubliable. Leur professionnalisme, leur créativité et leur humour ont conquis tous nos collaborateurs. Je les recommande vivement !"
+          </p>
+          <h4 class="testimonial-name">Sophie Durand</h4>
+          <p class="testimonial-position">Directrice événementielle, Société ABC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content" data-aos="fade-up">
+      <h2>Prêt à vivre une expérience magique ?</h2>
+      <p>Contactez-nous dès maintenant pour réserver votre spectacle ou en savoir plus sur nos services</p>
+      <a href="pages/contact.html" class="btn btn-primary">Contactez-nous</a>
+    </div>
+  </section>
+
+  <!-- Blog Preview Section -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Dernières actualités</h2>
+        <p>Restez informés de nos aventures</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-card">
+            <div class="blog-img-container">
+              <img src="images/harry-et-dom.jpg" alt="Festival de magie">
+              <span class="blog-category">Événement</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date"><i class="far fa-calendar"></i> 15 Mars 2025</span>
+              <h3 class="blog-title">Le Grand Festival de Magie approche</h3>
+              <p class="blog-excerpt">Découvrez notre participation exceptionnelle au plus grand festival de magie de l'année. Un spectacle inédit vous attend...</p>
+              <a href="pages/news.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-card">
+            <div class="blog-img-container">
+              <img src="images/duo-magicienclown.jpg" alt="Atelier magique">
+              <span class="blog-category">Atelier</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date"><i class="far fa-calendar"></i> 5 Mars 2025</span>
+              <h3 class="blog-title">Nouveaux ateliers de magie pour débutants</h3>
+              <p class="blog-excerpt">Nous lançons une nouvelle série d'ateliers d'initiation à la magie pour tous. Venez découvrir les secrets des plus grands tours...</p>
+              <a href="pages/news.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -123,25 +240,36 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h4>Harry & Dom</h4>
-          <p>L'univers magique qui enchante vos journées</p>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget">
+            <h4>Harry & Dom</h4>
+            <p>Un duo magique et humoristique qui vous fera vivre des moments inoubliables à travers l'art de la magie et la puissance du rire.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h4>Liens Rapides</h4>
-          <ul class="footer-links">
-            <li><a href="pages/about.html">À propos</a></li>
-            <li><a href="pages/gallery.html">Galerie</a></li>
-            <li><a href="pages/news.html">Actualités</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-          </ul>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget">
+            <h4>Liens utiles</h4>
+            <ul class="footer-links">
+              <li><a href="pages/about.html">À propos de nous</a></li>
+              <li><a href="pages/gallery.html">Galerie photo</a></li>
+              <li><a href="pages/news.html">Blog & Actualités</a></li>
+              <li><a href="pages/contact.html">Nous contacter</a></li>
+              <li><a href="#">Mentions légales</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h4>Suivez-nous</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-widget">
+            <h4>Contact</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Rue Magique, 75000 Paris</p>
+            <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+            <p><i class="fas fa-envelope"></i> contact@harryetdom.fr</p>
           </div>
         </div>
       </div>
@@ -154,7 +282,38 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/home.js"></script>
+  <script>
+    // Initialisation des animations AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+    
+    // Changement de style du navbar au scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        navbar.classList.add('navbar-light');
+        navbar.classList.remove('navbar-dark');
+      } else {
+        navbar.classList.remove('scrolled');
+        navbar.classList.remove('navbar-light');
+        navbar.classList.add('navbar-dark');
+      }
+    });
+    
+    // Animation du scroll vers le bas
+    document.querySelector('.scroll-down').addEventListener('click', function(e) {
+      e.preventDefault();
+      const aboutSection = document.getElementById('about');
+      window.scrollTo({
+        top: aboutSection.offsetTop - 70,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>

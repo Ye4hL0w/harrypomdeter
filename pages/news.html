@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités - Harry pomme de terre et Dom le magicien</title>
+    <title>Actualités - Harry & Dom | Duo magique et humoristique</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -11,8 +15,8 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/modern.css">
+    <link rel="stylesheet" href="../css/news-modern.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -48,21 +52,21 @@
 
     <!-- Hero Section -->
     <header class="news-hero">
+        <div class="news-hero-overlay"></div>
         <div class="news-hero-content" data-aos="fade-up">
             <h1>Dernières Actualités</h1>
             <p class="lead">Restez informés de nos aventures magiques</p>
         </div>
-        <div class="news-hero-overlay"></div>
     </header>
 
-    <!-- Section Articles Vedettes -->
-    <section class="featured-news">
+    <!-- Featured Article Section -->
+    <section class="featured-article-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8" data-aos="fade-right">
                     <article class="featured-article">
                         <div class="article-image">
-                            <img src="../images/news/featured1.jpg" alt="Article à la une">
+                            <img src="../images/harry-et-dom.jpg" alt="Article à la une">
                             <div class="article-category">Événement Spécial</div>
                         </div>
                         <div class="article-content">
@@ -71,7 +75,7 @@
                                 <span><i class="far fa-calendar"></i> 15 Mars 2025</span>
                                 <span><i class="far fa-user"></i> Par Dom le magicien</span>
                             </div>
-                            <p>Préparez-vous pour le plus grand festival de magie de l'année ! Harry pomme de terre et Dom le magicien vous réservent des surprises extraordinaires...</p>
+                            <p>Préparez-vous pour le plus grand festival de magie de l'année ! Harry pomme de terre et Dom le magicien vous réservent des surprises extraordinaires et des moments inoubliables lors de cet événement unique qui rassemblera les plus grands noms de la magie internationale.</p>
                             <a href="#" class="btn btn-primary">Lire la suite</a>
                         </div>
                     </article>
@@ -106,29 +110,56 @@
         </div>
     </section>
 
-    <!-- Section Articles Récents -->
-    <section class="recent-news">
+    <!-- Recent Articles Section -->
+    <section class="recent-articles">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Articles Récents</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Articles Récents</h2>
+                <p>Les dernières nouvelles de notre univers magique</p>
+            </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <article class="news-card">
                         <div class="news-image">
-                            <img src="../images/news/article1.jpg" alt="Article 1">
+                            <img src="../images/harry-et-dom.jpg" alt="Article 1">
                             <div class="news-category">Aventures</div>
                         </div>
                         <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar"></i> 1 Mars 2025</span>
                             <h3>La Quête du Cristal Magique</h3>
-                            <div class="news-meta">
-                                <span><i class="far fa-calendar"></i> 1 Mars 2025</span>
-                                <span><i class="far fa-comment"></i> 12 commentaires</span>
-                            </div>
-                            <p>Suivez Harry et Dom dans leur nouvelle quête épique à la recherche du légendaire Cristal Magique...</p>
+                            <p>Suivez Harry et Dom dans leur nouvelle quête épique à la recherche du légendaire Cristal Magique qui pourrait révolutionner le monde de la magie...</p>
                             <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>
-                <!-- Répétez pour plus d'articles -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="../images/duo-magicienclown.jpg" alt="Article 2">
+                            <div class="news-category">Spectacles</div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar"></i> 25 Février 2025</span>
+                            <h3>Tournée Nationale 2025</h3>
+                            <p>Découvrez les dates et lieux de notre grande tournée nationale qui débutera le mois prochain. Nous avons hâte de vous retrouver dans toute la France...</p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="../images/harry-et-dom.jpg" alt="Article 3">
+                            <div class="news-category">Tutoriels</div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar"></i> 18 Février 2025</span>
+                            <h3>Apprenez la Magie des Cartes</h3>
+                            <p>Dom vous révèle ses secrets pour réaliser des tours de cartes bluffants dans ce premier article d'une série dédiée aux apprentis magiciens...</p>
+                            <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
             </div>
             
             <!-- Pagination -->
@@ -150,6 +181,7 @@
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
+        <div class="newsletter-overlay"></div>
         <div class="container">
             <div class="newsletter-content" data-aos="fade-up">
                 <h2>Restez informés !</h2>
@@ -164,29 +196,130 @@
         </div>
     </section>
 
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Catégories</h2>
+                <p>Explorez nos articles par thématique</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Spectacles</h3>
+                        <p>Découvrez nos derniers spectacles et performances</p>
+                        <span class="article-count">12 articles</span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Tutoriels</h3>
+                        <p>Apprenez la magie avec nos guides pas à pas</p>
+                        <span class="article-count">8 articles</span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Événements</h3>
+                        <p>Retrouvez nos prochains événements et festivals</p>
+                        <span class="article-count">15 articles</span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h4>Harry & Dom</h4>
-                    <p>L'univers magique qui enchante vos journées</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Harry & Dom</h4>
+                        <p>Un duo magique et humoristique qui vous fera vivre des moments inoubliables à travers l'art de la magie et la puissance du rire.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Liens Rapides</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Liens rapides</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="gallery.html">Galerie photo</a></li>
+                            <li><a href="news.html">Blog & Actualités</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Nous contacter</h4>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                123 Rue Magique, 75000 Paris, France
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                +33 1 23 45 67 89
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                contact@harryetdom.fr
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                Lun - Ven: 9h00 - 18h00<br>
+                                Sam: 10h00 - 15h00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Restez informés de nos dernières actualités et spectacles à venir.</p>
+                            <form class="footer-newsletter-form">
+                                <input type="email" class="form-control" placeholder="Votre email">
+                                <button type="submit" class="btn btn-primary">S'inscrire</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,10 +329,54 @@
         </div>
     </footer>
 
+    <!-- Bouton retour en haut -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/news.js"></script>
+    <script>
+        // Initialisation des animations AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+        
+        // Bouton retour en haut
+        window.addEventListener('scroll', function() {
+            const scrollToTop = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 300) {
+                scrollToTop.classList.add('active');
+            } else {
+                scrollToTop.classList.remove('active');
+            }
+        });
+        
+        // Clic sur le bouton retour en haut
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Changement de style du navbar au scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.add('navbar-light');
+                navbar.classList.remove('navbar-dark');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.remove('navbar-light');
+                navbar.classList.add('navbar-dark');
+            }
+        });
+    </script>
 </body>
 </html> 

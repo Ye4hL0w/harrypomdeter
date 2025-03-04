@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Harry pomme de terre et Dom le magicien</title>
+    <title>Contact - Harry & Dom | Duo magique et humoristique</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/modern.css">
+    <link rel="stylesheet" href="../css/contact-modern.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -50,144 +52,190 @@
 
     <!-- Hero Section -->
     <header class="contact-hero">
+        <div class="contact-hero-overlay"></div>
         <div class="contact-hero-content" data-aos="fade-up">
             <h1>Contactez-nous</h1>
-            <p class="lead">Une question magique ? N'hésitez pas à nous écrire !</p>
+            <p class="lead">Nous sommes à votre écoute pour toute demande</p>
         </div>
-        <div class="contact-hero-overlay"></div>
     </header>
 
-    <!-- Contact Info Section -->
-    <section class="contact-info">
+    <!-- Contact Section -->
+    <section class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Adresse</h3>
-                        <p>123 Rue Magique<br>75000 Paris, France</p>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h2>Informations de contact</h2>
+                        <p class="contact-intro">Vous souhaitez réserver un spectacle, nous poser une question ou simplement nous faire part de vos retours ? N'hésitez pas à nous contacter par le moyen de votre choix.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Adresse</h3>
+                                <p>123 Rue Magique, 75000 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Téléphone</h3>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>contact@harryetdom.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Horaires de bureau</h3>
+                                <p>Lundi - Vendredi: 9h00 - 18h00<br>Samedi: 10h00 - 15h00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h3>Suivez-nous</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="info-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Téléphone</h3>
-                        <p>+33 1 23 45 67 89<br>+33 9 87 65 43 21</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>contact@harryetdom.fr<br>info@harryetdom.fr</p>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-form-container">
+                        <h2>Envoyez-nous un message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Nom</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Votre message" required></textarea>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="consent" required>
+                                <label class="form-check-label" for="consent">
+                                    J'accepte que mes données soient utilisées pour traiter ma demande
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                Envoyer le message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="contact-form">
-                        <h2>Envoyez-nous un message</h2>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Nom complet</label>
-                                <input type="text" class="form-control" id="name" required>
-                                <div class="form-icon">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Adresse email</label>
-                                <input type="email" class="form-control" id="email" required>
-                                <div class="form-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Sujet</label>
-                                <input type="text" class="form-control" id="subject" required>
-                                <div class="form-icon">
-                                    <i class="fas fa-magic"></i>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                                <div class="form-icon">
-                                    <i class="fas fa-comment"></i>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <span>Envoyer</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="map-container">
-                        <div id="map"></div>
-                        <div class="map-info">
-                            <h3>Notre École de Magie</h3>
-                            <p>Venez nous rendre visite dans notre école magique, située au cœur de Paris.</p>
-                            <div class="opening-hours">
-                                <h4>Horaires d'ouverture</h4>
-                                <ul>
-                                    <li><span>Lundi - Vendredi:</span> 9h00 - 18h00</li>
-                                    <li><span>Samedi:</span> 10h00 - 16h00</li>
-                                    <li><span>Dimanche:</span> Fermé</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Notre Localisation</h2>
+                <p>Venez nous rendre visite dans nos locaux</p>
             </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410942557!2d2.2769954081567704!3d48.8589713737741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1646586789747!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Questions Fréquentes</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item" data-aos="fade-up">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            Comment devenir un apprenti magicien ?
+            <div class="section-header" data-aos="fade-up">
+                <h2>Questions Fréquentes</h2>
+                <p>Trouvez rapidement des réponses à vos interrogations</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Comment réserver un spectacle ?
                         </button>
-                    </h3>
-                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Pour devenir apprenti magicien, il suffit de nous contacter et de manifester votre intérêt pour la magie. Nous étudierons votre candidature avec attention.
+                            Pour réserver un spectacle, vous pouvez nous contacter directement par téléphone, email ou via notre formulaire de contact. Nous vous répondrons dans les plus brefs délais pour discuter de vos besoins spécifiques et vous proposer une offre adaptée.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            Proposez-vous des cours particuliers ?
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Pour quels types d'événements proposez-vous vos services ?
                         </button>
-                    </h3>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Oui, nous proposons des cours particuliers adaptés à tous les niveaux, du débutant à l'expert en magie.
+                            Nous proposons nos spectacles pour une grande variété d'événements : anniversaires, mariages, fêtes d'entreprise, séminaires, écoles, centres de loisirs, festivals, fêtes de ville, etc. Notre spectacle est adaptable en fonction du public et du contexte.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            Peut-on visiter l'école de magie ?
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Quelle est la durée d'un spectacle ?
                         </button>
-                    </h3>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Les visites sont possibles sur rendez-vous. Contactez-nous pour organiser votre venue.
+                            La durée standard de notre spectacle est d'environ 60 à 90 minutes, mais nous pouvons adapter le format selon vos besoins. Nous proposons également des interventions plus courtes ou des animations sur plusieurs heures pour des événements spécifiques.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Vous déplacez-vous partout en France ?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Oui, nous nous déplaçons dans toute la France et même à l'international pour vos événements. Les frais de déplacement seront inclus dans le devis que nous vous proposerons après discussion de vos besoins.
                         </div>
                     </div>
                 </div>
@@ -199,25 +247,81 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h4>Harry & Dom</h4>
-                    <p>L'univers magique qui enchante vos journées</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Harry & Dom</h4>
+                        <p>Un duo magique et humoristique qui vous fera vivre des moments inoubliables à travers l'art de la magie et la puissance du rire.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Liens Rapides</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="news.html">Actualités</a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Liens rapides</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="gallery.html">Galerie photo</a></li>
+                            <li><a href="news.html">Blog & Actualités</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Nous contacter</h4>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                123 Rue Magique, 75000 Paris, France
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                +33 1 23 45 67 89
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                contact@harryetdom.fr
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="footer-contact-text">
+                                Lun - Ven: 9h00 - 18h00<br>
+                                Sam: 10h00 - 15h00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Restez informés de nos dernières actualités et spectacles à venir.</p>
+                            <form class="footer-newsletter-form">
+                                <input type="email" class="form-control" placeholder="Votre email">
+                                <button type="submit" class="btn btn-primary">S'inscrire</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,11 +331,82 @@
         </div>
     </footer>
 
+    <!-- Bouton retour en haut -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/contact.js"></script>
+    <script>
+        // Initialisation des animations AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+        
+        // Bouton retour en haut
+        window.addEventListener('scroll', function() {
+            const scrollToTop = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 300) {
+                scrollToTop.classList.add('active');
+            } else {
+                scrollToTop.classList.remove('active');
+            }
+        });
+        
+        // Clic sur le bouton retour en haut
+        document.querySelector('.scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Changement de style du navbar au scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.classList.add('navbar-light');
+                navbar.classList.remove('navbar-dark');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.remove('navbar-light');
+                navbar.classList.add('navbar-dark');
+            }
+        });
+        
+        // Gestion du formulaire de contact
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ici, vous pourriez ajouter du code pour envoyer réellement le formulaire
+            // via AJAX ou autre méthode
+            
+            // Simulation d'envoi
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            // Simulation de délai d'envoi
+            setTimeout(function() {
+                // Afficher un message de succès
+                const formContainer = document.querySelector('.contact-form-container');
+                formContainer.innerHTML = `
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message envoyé avec succès !</h3>
+                        <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
+                    </div>
+                `;
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
